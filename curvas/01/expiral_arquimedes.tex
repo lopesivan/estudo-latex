@@ -1,0 +1,25 @@
+\documentclass{article}
+\usepackage{pgfplots}
+
+\begin{document}
+
+\begin{tikzpicture}
+\begin{axis}[
+    axis equal,
+    xlabel=$x$,
+    ylabel=$y$,
+    title=Espiral de Arquimedes,
+    xmin=-10,xmax=10,
+    ymin=-10,ymax=10,
+    axis lines=center,
+    domain=0:6*pi,
+    samples=200,
+    variable=\t,
+    ]
+    
+    \addplot [red,thick] ({t*cos(t)},{t*sin(t)});
+    
+\end{axis}
+\end{tikzpicture}
+
+\end{document}
